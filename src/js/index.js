@@ -8,7 +8,8 @@ import "../styles/index.css";
 import propTypes from "prop-types";
 
 function SimpleCounter(props) {
-    return (<div className="bigCounter">
+    return (
+    <div className="bigCounter">
         <div className="calendar">
             <i className="far fa-clock"></i>
         </div>
@@ -16,7 +17,8 @@ function SimpleCounter(props) {
         <div className="three">{props.digitThree % 10}</div>
         <div className="two">{props.digitTwo % 10}</div>
         <div className="one">{props.digitOne % 10}</div>
-    </div>);
+    </div>
+    );
 };
 
 SimpleCounter.protoTypes = {
